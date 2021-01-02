@@ -44,7 +44,7 @@ class LoginAndGetCookie:
         try:
             return WebDriverWait(self._driver, 10).until(EC.visibility_of_element_located(*locator))
         except Exception as msg:
-            return self.logger.debug(msg)
+            return logger.debug(msg)
 
     # 跳转iframe
     def _switch_to_iframe(self, locator):
@@ -83,7 +83,7 @@ class LoginAndGetCookie:
 
     # 登录并获取cookie
     def login_get_cookie(self):
-        self._login('用户名', '密码')
+        self._login('appleidnumber1', 'Xyz6431778')
         self._write_cookie_to_txt()
         self._quit()
 
@@ -148,4 +148,4 @@ if __name__ == '__main__':
     gologin = LoginAndGetCookie()
     # gologin.login_get_cookie()
     gologin.login_by_cookie()
-    gologin.send_mail_success('123', '123', '123123')
+    # gologin.send_mail_success('123', '123', '123123')

@@ -12,5 +12,3 @@ class MyLog:
         logger.add(f'{cls.LOG_PATH}runtime_{cls.TIME}.log', encoding='utf-8', rotation='1 week', retention='10 days')
         return logger
 
-    def close_logger(self):
-        return logger.stop()

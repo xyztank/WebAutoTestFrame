@@ -12,7 +12,7 @@ class BasePage:
     @allure.step('关闭浏览器')
     def driver_quit(self):
         self.logger.info('\n\n' + '*' * 20 + '关闭浏览器' + '*' * 20 + '\n')
-        self.logger.stop()
+        self.logger.remove()
         self.driver.quit()
 
     # 跳转iframe窗口

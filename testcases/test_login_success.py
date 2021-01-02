@@ -21,7 +21,7 @@ class TestLogin:
         cls.login_page.quit()
 
     @pytest.mark.parametrize("username,password,expected", [
-        ('用户名', '密码', '用户ID'),
+        ('appleidnumber1', 'Xyz6431778', 'appleidnumber1@163.com'),
     ])
     @allure.story('测试用户登录成功')
     def test_login_mail_success(self, username, password, expected):

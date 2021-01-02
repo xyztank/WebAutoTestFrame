@@ -16,17 +16,10 @@ class TestLogin:
     def teardown_class(cls):
         cls.login_page.quit()
 
-    def setup(self):
-        self.login_page.click_login()
-        time.sleep(1)
-        self.login_page.switch_iframe()
-        time.sleep(1)
-
     def teardown(self):
         self.login_page.switch_default_content()
-        time.sleep(1)
         self.login_page.return_click_login()
-        time.sleep(1)
+        self.login_page.click_login()
 
     @pytest.mark.parametrize("username,password,expected", [
         ('123123', '', '请输入密码'),

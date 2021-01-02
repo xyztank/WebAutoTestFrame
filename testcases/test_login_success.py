@@ -10,14 +10,9 @@ class TestLogin:
     def setup_class(cls):
         cls.login_page = MainPage().login_no_cookie()
         cls.login_page.logger.info('\n\n' + '*' * 20 + '测试用户登录成功' + '*' * 20 + '\n')
-        cls.login_page.click_login()
-        time.sleep(1)
-        cls.login_page.switch_iframe()
-        time.sleep(1)
 
     @classmethod
     def teardown_class(cls):
-        time.sleep(1)
         cls.login_page.quit()
 
     @pytest.mark.parametrize("username,password,expected", [

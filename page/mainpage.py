@@ -15,8 +15,8 @@ from utils.mylog import MyLog
 
 class MainPage(BasePage):
     _quit_locator = (By.XPATH, '//*[@id="_mail_component_120_120"]/a')  # 退出邮箱
-    _maillist_locator = (By.XPATH, '//*[@id="_mail_tabitem_1_4text"]')  # 通讯录
-    _inbox_locator = (By.XPATH, '//*[@id="_mail_tabitem_11_313text"]')  # 收件箱
+    _maillist_locator = (By.XPATH, '//*[@id="_mail_tabitem_1_117text"]')  # 通讯录
+    _inbox_locator = (By.XPATH, '//*[@id="_mail_tabitem_3_119text"]')  # 收件箱
     _sendmail_locator = (By.XPATH, '//span[text()="写 信"]')  # 写邮件按钮
     _close_label_locator = (By.XPATH, '//a[@title="点击关闭标签"]')
 

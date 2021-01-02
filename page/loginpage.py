@@ -1,3 +1,5 @@
+import time
+
 from selenium.webdriver.common.by import By
 from page.basepage import BasePage
 import allure
@@ -64,13 +66,15 @@ class LoginPage(BasePage):
     @allure.step('点击通过密码方式登录')
     def click_login(self):
         self.logger.info('点击通过密码方式登录')
-        # self.find_and_click(self._lbNormal_locator)
+        self.find_and_click(self._lbNormal_locator)
+        time.sleep(1)
 
     # 回到扫描登录页
     @allure.step('回到扫描登录页')
     def return_click_login(self):
         self.logger.info('回到扫描登录页')
         self.find_and_click(self._lbApp_locator)
+        time.sleep(1)
 
     # 切换至iframe
     @allure.step('切换至iframe')
@@ -87,6 +91,7 @@ class LoginPage(BasePage):
     # 业务层
     @allure.story('通过用户名密码登录')
     def login_by_password_fail(self, username, password):
+        self.switch_iframe()
         self._input_username(username)
         self._input_password(password)
         self._click_login_button()
@@ -94,7 +99,7 @@ class LoginPage(BasePage):
 
     @allure.story('通过用户名密码登录')
     def login_by_password_success(self, username, password):
-        self.get_web_url()
+        self.switch_iframe()
         self._input_username(username)
         self._input_password(password)
         self._click_login_button()

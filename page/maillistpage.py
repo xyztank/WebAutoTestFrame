@@ -85,7 +85,6 @@ class MailListPage(BasePage):
         self.logger.info('获取成功删除联系人tips')
         return self.find(self._delete_contacter_tips_locator).text
 
-    # 业务层
     # 成功创建联系人
     @allure.story('成功创建联系人')
     def create_contacter_success(self, username, mail, phone):

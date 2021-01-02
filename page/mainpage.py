@@ -42,13 +42,13 @@ class MainPage(BasePage):
     def write_cookie_to_txt(self):
         try:
             self.logger.info('获取cookie')
-            dictCookies = self.driver.get_cookies()
+            dict_cookies = self.driver.get_cookies()
             self.logger.info('将获取的cookie序列化')
-            jsonCookies = json.dumps(dictCookies)
-            print(jsonCookies)
+            json_cookies = json.dumps(dict_cookies)
+            print(json_cookies)
             with open(self._path, 'w') as f:
                 self.logger.info('cookie写入文件')
-                f.write(jsonCookies)
+                f.write(json_cookies)
         except Exception as e:
             self.logger.info(e)
 
@@ -58,8 +58,8 @@ class MainPage(BasePage):
         try:
             with open(self._path, 'r', encoding='utf8') as f:
                 self.logger.info('从文件中读cookie')
-                listCookies = json.loads(f.read())
-            return listCookies
+                list_cookies = json.loads(f.read())
+            return list_cookies
         except Exception as e:
             self.logger.info(e)
 
@@ -67,8 +67,8 @@ class MainPage(BasePage):
     @allure.step('通过cookie登录')
     def login_by_cookie(self):
         self.logger.info('通过cookie登录')
-        listCookies = self.read_cookie_txt()
-        for cookie in listCookies:
+        list_cookies = self.read_cookie_txt()
+        for cookie in list_cookies:
             if 'expiry' in cookie:
                 del cookie['expiry']
             self.driver.add_cookie(cookie)

@@ -132,8 +132,7 @@ class SendMailPage(BasePage):
         self.logger.info('获取无邮件标题时的响应')
         return self.find(self._no_title_response_locator).text
 
-    # 业务层
-    # 邮件发送成功
+    # 业务层，邮件发送成功
     @allure.story('邮件发送成功')
     def send_mail_success(self, user, title, content):
         """

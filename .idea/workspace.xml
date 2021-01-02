@@ -3,6 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="a859b1f6-7089-4c0b-92b3-258e1d0c15bb" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/cookie" beforeDir="false" afterPath="$PROJECT_DIR$/data/cookie" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/page/loginpage.py" beforeDir="false" afterPath="$PROJECT_DIR$/page/loginpage.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/login_and_get_cookie.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/login_and_get_cookie.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,12 +33,6 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="474" />
-    <option name="y" value="150" />
-    <option name="width" value="1206" />
-    <option name="height" value="750" />
-  </component>
   <component name="ProjectId" id="1mVhKgeuFtgCcJ5ALiF42ukYLb6" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -46,6 +43,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="SONARLINT_PRECOMMIT_ANALYSIS" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../test-project/AuditApiAutoTest-master" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -63,7 +61,7 @@
       <recent name="F:\testproject\WebAutoTestFrame\utils" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.pytest for test_login_success.TestLogin.test_login_mail_success">
+  <component name="RunManager" selected="Python tests.pytest for test_send_mail_fail.TestSendMail.test_send_mail_fail_container_illegal">
     <configuration name="login_and_get_cookie" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="WebAutoTestFrame" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -147,7 +145,7 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="pytest in test_create_contacter_success.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+    <configuration name="pytest for test_send_mail_fail.TestSendMail.test_send_mail_fail_container_illegal" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="WebAutoTestFrame" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -160,17 +158,17 @@
       <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_parameters" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/testcases/test_create_contacter_success.py&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <option name="_new_target" value="&quot;test_send_mail_fail.TestSendMail.test_send_mail_fail_container_illegal&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.pytest for test_send_mail_fail.TestSendMail.test_send_mail_fail_container_illegal" />
+        <item itemvalue="Python.login_and_get_cookie" />
         <item itemvalue="Python tests.pytest for test_login_success.TestLogin.test_login_mail_success" />
         <item itemvalue="Python.runtest" />
-        <item itemvalue="Python.login_and_get_cookie" />
         <item itemvalue="Python.mylog" />
-        <item itemvalue="Python tests.pytest in test_create_contacter_success.py" />
       </list>
     </recent_temporary>
   </component>
@@ -202,6 +200,8 @@
       <workItem from="1609584607352" duration="294000" />
       <workItem from="1609584932733" duration="817000" />
       <workItem from="1609586957133" duration="738000" />
+      <workItem from="1609587917068" duration="1701000" />
+      <workItem from="1609589652001" duration="995000" />
     </task>
     <task id="LOCAL-00001" summary="pytest数据驱动、allure测试报告">
       <created>1584275171567</created>
@@ -224,7 +224,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609584671833</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="update gitignore">
+      <created>1609588131563</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1609588131563</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -263,37 +270,41 @@
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="558" y="73" key="CommitChangelistDialog2" timestamp="1609584668136">
+    <state x="558" y="73" key="CommitChangelistDialog2" timestamp="1609588129130">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="558" y="73" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1609584668135" />
-    <state width="1877" height="401" key="GridCell.Tab.0.bottom" timestamp="1609584723810">
+    <state x="558" y="73" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1609588129130" />
+    <state width="1877" height="401" key="GridCell.Tab.0.bottom" timestamp="1609590650105">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="401" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1609584723810" />
-    <state width="1877" height="401" key="GridCell.Tab.0.center" timestamp="1609584723809">
+    <state width="1877" height="401" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1609590650105" />
+    <state width="1877" height="401" key="GridCell.Tab.0.center" timestamp="1609590650105">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="401" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1609584723809" />
-    <state width="1877" height="401" key="GridCell.Tab.0.left" timestamp="1609584723809">
+    <state width="1877" height="401" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1609590650105" />
+    <state width="1877" height="401" key="GridCell.Tab.0.left" timestamp="1609590650105">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="401" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1609584723809" />
-    <state width="1877" height="401" key="GridCell.Tab.0.right" timestamp="1609584723810">
+    <state width="1877" height="401" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1609590650105" />
+    <state width="1877" height="401" key="GridCell.Tab.0.right" timestamp="1609590650105">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="401" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1609584723810" />
+    <state width="1877" height="401" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1609590650105" />
     <state x="461" y="164" key="SettingsEditor" timestamp="1609587892375">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="164" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1609587892375" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1609584686752">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1609588143565">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1609584686752" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1609588143565" />
+    <state x="662" y="74" width="596" height="891" key="find.popup" timestamp="1609590610630">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="662" y="74" width="596" height="891" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1609590610630" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/WebAutoTestFrame$login_and_get_cookie.coverage" NAME="login_and_get_cookie Coverage Results" MODIFIED="1584276276174" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/utils" />
+    <SUITE FILE_PATH="coverage/WebAutoTestFrame$login_and_get_cookie.coverage" NAME="login_and_get_cookie Coverage Results" MODIFIED="1609590650095" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/utils" />
     <SUITE FILE_PATH="coverage/WebAutoTestFrame$self.coverage" NAME="self Coverage Results" MODIFIED="1584181089034" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/utils" />
     <SUITE FILE_PATH="coverage/WebAutoTestFrame$pytest_in_test_create_contacter_success_py.coverage" NAME="pytest in test_create_contacter_success.py Coverage Results" MODIFIED="1584258560938" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testcases" />
     <SUITE FILE_PATH="coverage/WebAutoTestFrame$createdirpath__1_.coverage" NAME="createdirpath (1) Coverage Results" MODIFIED="1584182032626" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/utils" />
@@ -310,13 +321,13 @@
     <SUITE FILE_PATH="coverage/WebAutoTestFrame$pytest_for_test_send_mail_success_TestSendMail_test_send_mail_success.coverage" NAME="pytest for test_send_mail_success.TestSendMail.test_send_mail_success Coverage Results" MODIFIED="1584187205154" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testcases" />
     <SUITE FILE_PATH="coverage/WebAutoTestFrame$pytest_in_test_send_mail_py.coverage" NAME="pytest in test_send_mail.py Coverage Results" MODIFIED="1583930896520" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testcases" />
     <SUITE FILE_PATH="coverage/WebAutoTestFrame$createdata.coverage" NAME="createdata Coverage Results" MODIFIED="1584186891172" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/utils" />
-    <SUITE FILE_PATH="coverage/WebAutoTestFrame$pytest_for_test_send_mail_fail_TestSendMail_test_send_mail_fail_container_illegal.coverage" NAME="pytest for test_send_mail_fail.TestSendMail.test_send_mail_fail_container_illegal Coverage Results" MODIFIED="1584002178286" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testcases" />
+    <SUITE FILE_PATH="coverage/WebAutoTestFrame$pytest_for_test_send_mail_fail_TestSendMail_test_send_mail_fail_container_illegal.coverage" NAME="pytest for test_send_mail_fail.TestSendMail.test_send_mail_fail_container_illegal Coverage Results" MODIFIED="1609590691944" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testcases" />
     <SUITE FILE_PATH="coverage/WebAutoTestFrame$pytest_for_test_login_TestLogin_test_login_mail.coverage" NAME="pytest for test_login.TestLogin.test_login_mail Coverage Results" MODIFIED="1583722785146" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testcases" />
     <SUITE FILE_PATH="coverage/WebAutoTestFrame$runtest.coverage" NAME="runtest Coverage Results" MODIFIED="1584278173556" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/WebAutoTestFrame$pytest_for_test_send_mail_success_TestSendMail_test_send_mail_success1.coverage" NAME="pytest for test_send_mail_success.TestSendMail.test_send_mail_success1 Coverage Results" MODIFIED="1584002139351" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testcases" />
     <SUITE FILE_PATH="coverage/WebAutoTestFrame$pytest_for_test_send_mail_TestSendMail_test_send_mail_success.coverage" NAME="pytest for test_send_mail.TestSendMail.test_send_mail_success Coverage Results" MODIFIED="1583930669967" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testcases" />
     <SUITE FILE_PATH="coverage/WebAutoTestFrame$cookie.coverage" NAME="cookie Coverage Results" MODIFIED="1583744197400" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testcases" />
-    <SUITE FILE_PATH="coverage/WebAutoTestFrame$pytest_for_test_login_success_TestLogin_test_login_mail_success.coverage" NAME="pytest for test_login_success.TestLogin.test_login_mail_success Coverage Results" MODIFIED="1609584698227" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testcases" />
+    <SUITE FILE_PATH="coverage/WebAutoTestFrame$pytest_for_test_login_success_TestLogin_test_login_mail_success.coverage" NAME="pytest for test_login_success.TestLogin.test_login_mail_success Coverage Results" MODIFIED="1609590329104" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testcases" />
     <SUITE FILE_PATH="coverage/WebAutoTestFrame$pytest_for_test_delete_contacter_success_TestDeleteContacter_test_delete_contacter_success.coverage" NAME="pytest for test_delete_contacter_success.TestDeleteContacter.test_delete_contacter_success Coverage Results" MODIFIED="1584026948731" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testcases" />
     <SUITE FILE_PATH="coverage/WebAutoTestFrame$pytest_for_test_send_mail_TestSendMail_test_send_mail_fail_no_content.coverage" NAME="pytest for test_send_mail.TestSendMail.test_send_mail_fail_no_content Coverage Results" MODIFIED="1583932479291" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testcases" />
     <SUITE FILE_PATH="coverage/WebAutoTestFrame$pytest_for_test_send_mail_fail_TestSendMail_test_send_mail_fail_no_container.coverage" NAME="pytest for test_send_mail_fail.TestSendMail.test_send_mail_fail_no_container Coverage Results" MODIFIED="1583996532619" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testcases" />

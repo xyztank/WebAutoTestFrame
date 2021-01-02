@@ -64,7 +64,7 @@ class LoginPage(BasePage):
     @allure.step('点击通过密码方式登录')
     def click_login(self):
         self.logger.info('点击通过密码方式登录')
-        self.find_and_click(self._lbNormal_locator)
+        # self.find_and_click(self._lbNormal_locator)
 
     # 回到扫描登录页
     @allure.step('回到扫描登录页')

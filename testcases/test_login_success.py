@@ -1,4 +1,4 @@
-import time
+
 import pytest
 import allure
 from page.mainpage import MainPage

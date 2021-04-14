@@ -1,0 +1,6 @@
+.gitignore
+/.idea/
+/venv/
+/.pytest_cache/
+/log/
+/report/allure
